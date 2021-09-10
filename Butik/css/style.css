@@ -1,0 +1,84 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bai+Jamjuree:wght@200&family=Teko&display=swap');
+/* 'Amatic SC', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bai+Jamjuree:wght@200&family=Teko&family=Ultra&display=swap');
+
+/*'Ultra', serif; */
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #a6c2d8;
+  --white: #ffffff;
+  --Green: #1ba669;
+  --Pink: #a61b58;
+  --Red: #f572a9;
+  --brown: #d8bca6;
+  /* fonte */
+  --font: 'Amatic SC', cursive;
+  /* brødtekst */
+  --displayH: 'Ultra', serif;
+  /* overskrifter */
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+/* Her bruges en variabel: --brown */
+body {
+  background-color: var(--brown);
+  font-family: var(--font);
+}
+
+/* Typografi */
+h1 {
+  font-family: var(--displayH);
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%
+}
+
+nav ul {
+  list-style-type: none;
+  /*fjerner bullets ved lister*/
+}
+
+nav ul li {
+  display: inline;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside ul li {
+  display: inline;
+}
+
+a {
+  color: Black;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+#content {
+  display: flex;
+}
+
+/* Layout: Flexbox */
+aside {
+  width: 33%;
+}
